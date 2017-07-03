@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>	
+<h1>
+
+</h1>
+
+<app-header>  </app-header>
+<!-- two way binding -->
+<!--
+<div id="myDIV">
+Title: <input type="text"><br><br>
+</div>
+-->
+
+<div id="myDIV">
+Title: <input type="text" id="title">
+</div>
+<br/>
+Name: <input type="text" id="field1">
+<br/><br/>
+Lname: <input type="text" id="field2"><br><br>
+
+<!--
+<script>
+function myFunction() {
+    document.getElementById("field1").value = document.getElementById("field1").value;
+    document.getElementById("field2").value = document.getElementById("field2").value;
+}
+</script>
+-->	
+<button onclick="myFunction()">OK</button>
+
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById('myDIV');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+
+    document.getElementById("title").value = document.getElementById("field1").value;
+    document.getElementById("title").value = document.getElementById("field2").value;
+}
+</script>
+
+</html>
